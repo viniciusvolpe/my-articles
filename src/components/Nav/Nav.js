@@ -5,10 +5,8 @@ import { Link } from 'react-router-dom';
 function Nav() {
   function mapRoutes() {
     return routes.map(({ path, name }) => (
-      <li>
-        <Link to={path} key={`${path}-${name}`}>
-          {name}
-        </Link>
+      <li key={`${path}-${name}`}>
+        <Link to={path}>{name}</Link>
       </li>
     ));
   }
