@@ -1,6 +1,15 @@
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Nav from 'components/Nav';
 import routes from 'pages/routes';
+import styled from 'styled-components';
+
+const Main = styled.main`
+  background: ${(props) => props.theme.main.background};
+  width: 100vw;
+  height: 100vh;
+  color: ${(props) => props.theme.main.color};
+  font-family: 'Amiga Forever', sans-serif;
+`;
 
 function App() {
   function mapRoutes() {
@@ -9,10 +18,12 @@ function App() {
     ));
   }
   return (
-    <Router>
-      <Nav />
-      <Switch>{mapRoutes()}</Switch>
-    </Router>
+    <Main>
+      <Router>
+        <Nav />
+        <Switch>{mapRoutes()}</Switch>
+      </Router>
+    </Main>
   );
 }
 

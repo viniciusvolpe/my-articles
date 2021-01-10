@@ -17,8 +17,14 @@ p,
 figure,
 blockquote,
 dl,
-dd {
+dd,
+ul {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -70,4 +76,3 @@ select {
     scroll-behavior: auto !important;
   }
 }
-
