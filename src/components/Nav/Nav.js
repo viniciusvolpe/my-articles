@@ -20,6 +20,7 @@ const List = styled.ol`
 
 const ListItem = styled.li`
   margin: 0 15px;
+  padding-bottom: 5px;
   ${setBorder};
   a {
     padding: 10px;

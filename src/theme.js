@@ -3,7 +3,7 @@ const theme = {
     palete: {
       background: '#30343f',
       color: '#fafaff',
-      primary: '#e4d9ff',
+      primary: '#bb9fff',
       secondary: '#273469',
       dark: '#1e2749',
     },
