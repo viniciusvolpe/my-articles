@@ -4,10 +4,10 @@ import routes from 'pages/routes';
 import styled from 'styled-components';
 
 const Main = styled.main`
-  background: ${(props) => props.theme.main.background};
+  background: ${(props) => props.theme.main.palete.background};
   width: 100vw;
   height: 100vh;
-  color: ${(props) => props.theme.main.color};
+  color: ${(props) => props.theme.main.palete.color};
   font-family: 'Amiga Forever', sans-serif;
 `;
 
